@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Ariful Islam Fahim</title>
+
+  <meta name="description" content="Academic and lab projects by Ariful Islam Fahim in textile engineering, including sustainable textile processing and smart textile research.">
+
+  <!--
+    - open graph / social sharing metadata
+  -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Portfolio | Ariful Islam Fahim">
+  <meta property="og:description" content="Academic and lab projects by Ariful Islam Fahim in textile engineering, including sustainable textile processing and smart textile research.">
+  <meta property="og:image" content="./assets/images/my-avatar.png">
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main id="main-content">
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Ariful Islam Fahim" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Ariful Islam Fahim">Ariful Islam Fahim</h1>
+
+          <p class="title">Textile Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+        </button>
+
+        <button class="icon-box" type="button" data-theme-toggle aria-label="Switch to dark theme">
+          <ion-icon name="moon-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:arifulislamfahim04@gmail.com" class="contact-link">arifulislamfahim04@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+8801968718018" class="contact-link">+880 1968-718018</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Rupganj, Narayanganj</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/arifulislamfahim04" class="social-link" aria-label="Facebook profile">
+              <ion-icon name="logo-facebook" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/ariful-islam-fahim" class="social-link" aria-label="LinkedIn profile">
+              <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link" aria-label="GitHub profile (link to be added)">
+              <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link">About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="resume.html" class="navbar-link">Resume</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="portfolio.html" class="navbar-link active" aria-current="page">Portfolio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="articles.html" class="navbar-link">Article</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <article class="portfolio active">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <!--
+            NOTE: search input is unwired markup, ready for a future JS phase
+            (client-side filtering / projects.json search per spec section 12).
+          -->
+          <div class="portfolio-search-box">
+            <label for="portfolio-search" class="portfolio-search-label">Search projects</label>
+            <input type="search" id="portfolio-search" class="portfolio-search-input" placeholder="Search projects"
+              data-portfolio-search>
+          </div>
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Academic Project</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Lab Project</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Academic Project</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Lab Project</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <!--
+            NOTE: this list is a stand-in for future projects.json-driven content
+            (spec section 12 — Portfolio). Owner confirmed: dedicated individual
+            project pages (spec section 8/17), not a modal. Cards link to
+            projects/*.html.
+          -->
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="academic project">
+              <a href="projects/textile-sludge-valorization.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projects/textile-sludge-valorization.jpg"
+                    alt="Co-Valorization of Textile Sludge project" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Co-Valorization of Textile Sludge</h3>
+
+                <p class="project-category">Academic Project</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="lab project">
+              <a href="projects/ph-sensitive-smart-textile.html">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projects/ph-sensitive-smart-textile.jpg"
+                    alt="pH-Sensitive Smart Textile Using Natural Dye project" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">pH-Sensitive Smart Textile Using Natural Dye</h3>
+
+                <p class="project-category">Lab Project</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active project-item-placeholder" data-filter-item data-category="academic project">
+              <p class="project-placeholder-text">More academic projects coming soon</p>
+            </li>
+
+            <li class="project-item  active project-item-placeholder" data-filter-item data-category="lab project">
+              <p class="project-placeholder-text">More lab projects coming soon</p>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script type="module" src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
